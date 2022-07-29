@@ -79,6 +79,10 @@ for idx in range(10):
     # 把线程对象都存储到 threadlist中
     theadlist.append(thread)
 
+print(theadlist)
+sleep(0.5) #意思是主线程暂停0.5s执行子线程
+print('add complete')
+
 for thread in theadlist:
     thread.join()
 
